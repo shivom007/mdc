@@ -17,7 +17,7 @@ app.get("/webhook",(req,res)=>{
    let mode=req.query["hub.mode"];
    let challange=req.query["hub.challenge"];
    let token=req.query["hub.verify_token"];
-
+  console.log("im here")
 
     if(mode && token){
 
